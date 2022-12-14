@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColor: #aaa;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #aaaaaa;
+  --textColor: #eee;
+  --colorTitle: #20c451;
+}
+.container {
+  background-image: url("../assets/gius.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  visibility: hidden;
+  position: absolute;
+}
+.navBtn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  opacity: 1;
+  font-size: 1.8rem;
+  padding-left: 15px;
+}
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 1s;
+  transform: translateY(-100vh);
+}
+
+.responsiveNav {
+  transform: none;
+}
+
+.navCloseBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.Img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+nav a {
+  font-size: 1.5rem;
+}
+.btnContact {
+  visibility: hidden;
+  position: absolute;
+}
+.containerImgName {
+  color: #2aeddb;
+  font-weight: bold;
+}
+.containerImgText {
+  color: #fff;
+  font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+  .navContact {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+  .container {
+    height: 100vh;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 32px;
+    color: var(--textColor);
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    gap: 1.5rem;
+    position: inherit;
+    background: transparent;
+    transform: none;
+  }
+
+  nav a:hover {
+    color: var(--secondaryColor);
+  }
+  .btnContact {
+    background: #141e30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #243b55,
+      #141e30
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #243b55,
+      #141e30
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #2aeddb;
+    text-decoration: none;
+  }
+  .btnContact:hover {
+    background-color: var(--colorTitle);
+    transition: 0.5s;
+    border-radius: 20px;
+    color: var(--textColor);
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px #2aeddb;
+  }
+  .navBtn {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    visibility: visible;
+    position: relative;
+    border-radius: 50px;
+    padding: 0 10px;
+  }
+  .btnContact {
+    visibility: visible;
+    position: initial;
+  }
+  .containerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  .Img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .containerImgName {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .containerImgText {
+    color: #fff;
+    font-weight: bold;
+  }
+}

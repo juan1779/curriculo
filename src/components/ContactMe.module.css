@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c3e50,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 0;
+}
+form {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 1px solid #fff;
+  padding: 10px 0;
+  margin: 10px 10px;
+  border-radius: 10px;
+  height: auto;
+  width: 90%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+.text input {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  padding: 5px;
+  margin: 5px 0;
+}
+.btn {
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+  form {
+    width: 40%;
+  }
+  .text input {
+    padding: 10px;
+    font-size: 20px;
+    width: 80%;
+    font-weight: bold;
+  }
+  .text input:focus {
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 0 10px #2aeddb;
+  }
+}

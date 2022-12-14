@@ -1,0 +1,72 @@
+.container {
+  background: #085078; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #85d8ce,
+    #085078
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #85d8ce,
+    #085078
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cardContainer {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 10px;
+  border: 1px solid blue;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.titlePage {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.title {
+  text-align: center;
+  color: #fff;
+}
+.description {
+  text-align: justify;
+  padding: 10px 0;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1135px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerText {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 20px 0;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardContainer:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+}

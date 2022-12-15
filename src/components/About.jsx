@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./About.module.css";
-import Yo from "../assets/yo.jpg";
+import Yo from "../assets/juan.jpg";
+import Curriculum from "../assets/curriculum.pdf";
 
 function About() {
   return (
@@ -48,8 +49,8 @@ function About() {
           </ul>
         </div>
         <a
-          href="../assets/curriculum en.pdf"
-          download="Curriculum"
+          href={Curriculum}
+          download="curriculumJuan.pdf"
           className={style.btnCv}
         >
           Download Cv

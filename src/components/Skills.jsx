@@ -21,7 +21,7 @@ function Skills() {
     </div>
   );
 
-  function Card({ Title, Img }) {
+  function Card({ Img }) {
     return (
       <div className={style.cardContainer}>
         <img className={style.Img} src={Img} />

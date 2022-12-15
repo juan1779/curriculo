@@ -1,5 +1,5 @@
 import React from "react";
-import Yo from "../assets/yo.jpg";
+import Yo from "../assets/logoo.jpg";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import style from "./Head.module.css";

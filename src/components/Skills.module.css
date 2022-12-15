@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 .container h2 {
   font-size: 40px;
@@ -36,19 +36,25 @@
   width: 66px;
   box-sizing: content-box;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
   .container {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    width: 100vw;
+    padding: 0;
   }
+
   .cardContainer {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: 25px;
+    margin: 25px 50px;
   }
   .containerText {
-    padding: 40px 0;
-    width: 70%;
+    padding: 0 0 40px 0px;
+    height: 80%;
+    width: 90vw;
   }
 
   .Img {

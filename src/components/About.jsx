@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./About.module.css";
-import Yo from "../assets/juan.jpg";
+import Yo from "../assets/juan.png";
 import Curriculum from "../assets/curriculum.pdf";
 
 function About() {
